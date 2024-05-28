@@ -1,0 +1,339 @@
+
+@font-face {
+  font-family: "BurstMyBubble";
+  src: url("/fonts/Pixel_NES.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MarioWorld";
+  src: url("/fonts/MarioWorldPixelColor.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+
+body {
+  font-family: "BurstMyBubble", Helvetica Neue,Helvetica,sans-serif !important; 
+  font-size:  16px!important;
+  line-height:  1.4em!important;
+  background-color: #3cbcfc!important;
+  color: black!important;
+}
+
+
+h1 {
+  font-family:  "MarioWorld", monospace !important; 
+  font-weight:  normal!important;
+
+  background-color: #0058F8;
+  color: white;
+  font-size:  30px!important;
+  font-weight:  normal!important;
+  padding:  12px;
+  line-height: 1.6em!important;
+  padding-top: 1.3em!important;
+  border-right:  3px solid black;
+  border-bottom:  3px solid black;
+  border-radius: 10px;
+
+}
+
+h2 {
+   font-family:  "BurstMyBubble", monospace !important; 
+  font-weight:  normal!important;
+  color: white!important;
+  font-size:  25px!important;
+  line-height: 1em!important;
+  padding:  26px 0 6px;
+}
+
+h3 {
+  font-size: 30px!important;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+p a {
+  color: #3b4039!important;
+}
+
+p a:hover {
+  background-color: #FFFC00;
+  color: black!important;
+}
+
+p a:hover img {
+  position: relative;
+  top: 1px;
+  background-color: none!important;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+
+button, .btn {
+  background-color:  #82ba23!important;
+
+  border-bottom:  3px solid black !important;
+  border-right:  3px solid black !important;
+
+  color: white!important;
+  font-size:  25px!important;
+  line-height:  1em!important;
+  padding-top:  0.2em!important;
+  padding:  0.5em!important;
+}
+
+
+button:hover, .btn:hover {
+  background-color:  #FFFC00 !important;
+  border-bottom:  3px solid black !important;
+  border-right:  3px solid black !important;
+  color: black!important;
+}
+
+button.btn-success {
+  background-color: #42FF00!important;
+  border-color: black!important;
+  color: black!important;
+}
+
+button.btn-warning {
+  background-color: red!important;
+  border-color: black!important;
+  color: yellow!important;
+}
+
+button.btn-info {
+  background-color: #2f3fff!important;
+  border-color: black!important;
+  color: white!important;
+}
+
+button.btn-secondary {
+  background-color: #3b4039!important;
+  border-color: black!important;
+  color: white!important;
+}
+
+.ethkun-character button {
+  font-size:   24px !important;
+  padding-top:  0.5em !important;
+
+}
+
+.ethkun-character button img {
+  margin-bottom:4px!important;
+  margin: 0px!important;
+}
+
+.batched-area button {
+  font-size:   24px !important;
+  padding-top:  0.5em !important;
+}
+
+.batched-area button img {
+  margin-bottom:4px!important;
+  margin: 0px!important;
+}
+
+
+.hero {
+   animation: floating 2s infinite;
+}
+
+@keyframes floating {
+     0%, 35% {
+        transform: translateY(25px);
+        animation-timing-function: ease-out; /* The start of the jump, easing out to simulate the force of the jump overcoming gravity */
+    }
+    50% {
+        transform: translateY(-10px)  scaleY(1.05); /* Control the height of the jump here */
+        animation-timing-function: ease-in; /* The peak and descent of the jump, easing in to simulate gravity pulling the object back down */
+    }
+    65%, 100% {
+        transform: translateY(25px);
+        animation-timing-function: ease-out; /* The object hits the ground and briefly squashes down a little further than its normal position */
+    }
+}
+
+.selector {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.ethAccount {
+  color:  white;
+  font-family: monospace; 
+  font-size: 12px!important;
+}
+
+
+@-webkit-keyframes animVibing {
+
+    0% {
+        transform:  rotate(0deg);
+        transform-origin: 50% 120%;
+    }
+    25% {
+        transform:  rotate(3deg);
+        transform-origin: 50% 120%;
+    }
+    50% {
+        transform:  rotate(0deg);
+        transform-origin: 50% 120%;
+    }
+    75% {
+        transform:  rotate(-3deg);
+        transform-origin: 50% 120%;
+    }
+    100% {
+        transform:  rotate(0deg);
+        transform-origin: 50% 120%;
+    }
+}
+
+.handpoint {
+
+   animation:rotatePoint 0.75s linear infinite;
+}
+
+@-webkit-keyframes rotatePoint {
+
+  0% {
+        transform:  translate(0,0) rotate(-5deg);
+        animation-timing-function: ease-in;
+    }
+    40% {
+        transform:  translate(12%,0) rotate(5deg);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform:  translate(0,0) rotate(-5deg);
+    }
+}
+
+.faqitem {
+  margin-bottom:  30px;
+}
+
+.faqitem h2{
+  margin-bottom:  0.1em!important;
+}
+
+.mint-btns .btn {
+  margin-right:  4px!important;
+}
+
+.play-btns .btn {
+  font-size: 14px!important;
+  border-width:  2px!important;
+}
+
+.eddiecharacter {
+  margin-top:  30px!important;
+  margin-bottom:  30px!important;
+}
+
+a img:hover {
+  position: relative;
+  top:  3px;
+}
+
+a img:active {
+  position: relative;
+  top:  7px;
+}
+
+.headerTop {
+  background-image: url("../public/tinyfrogs/bg-side.png");
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  background-position: center center;
+}
+
+.mintSection {
+  margin: 70px 0 50px 0; 
+}
+
+
+.faqSection {
+  margin: 90px 0 0px 0; 
+}
+
+.strikeout {
+  text-decoration: line-through;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.toolhighlight {
+  background-color: yellow;
+  padding:  5px;
+  border-radius: 5px;
+}
+
+.checkoutTotal {
+  background-color: yellow;
+  padding: 1em;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.frogSingle {
+  background-color: white;
+  border:  1px solid black;
+  margin:  1em 0;
+  padding:  1em;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.frogSingle pre{
+    word-wrap: break-word;
+}
+
+.frogSingle h3 {
+  font-size: 2em!important;
+}
+
+.frogSingle li {
+  line-height:  1em;
+}
+
+.frogSingle a {
+  color: blue!important;
+}
+
+.frogSingle img {
+}
+
+.frogSingle button {
+  font-size: 1em !important;
+  padding:  0.4em!important;
+  margin-right: 0.25em;
+  margin-bottom:  0.25em;
+}
+
+.attributeType {
+}
+
+.attributeValue {
+  color:  blue;
+}
